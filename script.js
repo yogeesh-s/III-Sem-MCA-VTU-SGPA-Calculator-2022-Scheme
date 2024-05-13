@@ -215,6 +215,6 @@ generateCalculator(subjects, subject_code, credits);
 document.querySelector("button").addEventListener("click", () => {
   if (checkValidMarks()) {
     generateResult(subjects, subject_code, credits);
-    window.scrollTo(0, 730);
+    window.scrollTo(0, 740);
   }
 });
