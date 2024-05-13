@@ -1,4 +1,4 @@
-# III Sem SGPA Calculator
+# III Sem MCA VTU SGPA Calculator 2022 Scheme
 
 ## Description
 
