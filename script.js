@@ -158,7 +158,7 @@ const generateResult = (subjects, subject_code, credits) => {
     let printContent = document.querySelectorAll('.container')[1].innerHTML;
     document.body.innerHTML = printContent;
     window.print();
-    location.reload();
+    //location.reload();
   });
 };
 
