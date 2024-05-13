@@ -1,27 +1,34 @@
-# III Sem MCA SGPA Calculator 2022 Scheme VTU
-
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# III Sem SGPA Calculator
 
 ## Description
-III Sem SGPA Calculator is a web-based application designed to calculate Semester Grade Point Average (SGPA) for third-semester students. This calculator allows students to input their marks for various subjects and calculates their SGPA based on the entered data.
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+III Sem SGPA Calculator is a web application for calculating Semester Grade Point Average (SGPA) for third-semester students. It allows users to input marks for each subject and calculates SGPA based on the entered data.
 
 ## Features
-- Input form for entering marks for each subject
-- Calculation of SGPA based on entered marks and subject credits
-- Dynamic generation of result table
-- Validation for entered marks
-- Print functionality for the result
-- Responsive design
+
+- Input marks for each subject.
+- Calculate SGPA based on entered marks and subject credits.
+- Dynamic result display.
+- Input validation for marks.
+- Print functionality for the result.
+- Responsive design.
 
 ## Installation
-To use the III Sem SGPA Calculator, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/III-Sem-SGPA-Calculator.git
+
+1. Clone the repository.
+2. Open the `index.html` file in a web browser.
+
+## Usage
+
+1. Enter marks for each subject.
+2. Click "Calculate SGPA" to compute.
+3. View the calculated SGPA and result table.
+4. Optionally, print the result.
+
+## Contributing
+
+Contributions are welcome! Follow the standard GitHub workflow.
+
+## License
+
+This project is licensed under the MIT License.
