@@ -4,6 +4,11 @@
 
 III Sem SGPA Calculator is a web application for calculating Semester Grade Point Average (SGPA) for third-semester students. It allows users to input marks for each subject and calculates SGPA based on the entered data.
 
+### Screenshots
+
+![Screenshot 1](/screenshots/screenshot1.png)
+![Screenshot 2](/screenshots/screenshot2.png)
+
 ## Features
 
 - Input marks for each subject.
