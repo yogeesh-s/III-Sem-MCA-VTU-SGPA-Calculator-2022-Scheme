@@ -25,6 +25,10 @@ III Sem SGPA Calculator is a web application for calculating Semester Grade Poin
 3. View the calculated SGPA and result table.
 4. Optionally, print the result.
 
+## GitHub Pages
+
+This project is hosted on GitHub Pages. You can access it [here](https://yogeesh-s.github.io/III-Sem-MCA-VTU-SGPA-Calculator-2022-Scheme).
+
 ## Contributing
 
 Contributions are welcome! Follow the standard GitHub workflow.
