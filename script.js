@@ -9,7 +9,7 @@ const subjects = [
   "Data Analytics Lab with Mini-project",
   "IoT Laboratory with Mini Project",
   "Societal Project",
-  "Internship",
+  "Internship"
 ];
 
 const subject_code = [
@@ -29,10 +29,10 @@ const credits = [3, 3, 3, 3, 2, 2, 2, 2, 6];
 const marks = [];
 
 const generateTitle = () => {
-  const title = document.createElement('title');
+  const title = document.createElement("title");
   title.innerText = apptitle;
-  document.head.appendChild(title)
-}
+  document.head.appendChild(title);
+};
 
 const generateCalculator = (subjects, subject_code, credits) => {
   const div = document.createElement("div");
@@ -65,13 +65,13 @@ const generateCalculator = (subjects, subject_code, credits) => {
   const button = document.createElement("button");
   button.innerText = "Calculate SGPA";
   document.querySelectorAll(".container")[0].appendChild(button);
-  let heading3 = document.createElement('h3')
-  heading3.innerText = 'Made with ❤️️ by Yogeesh S';
-  document.querySelectorAll('.container')[0].appendChild(heading3);
+  let heading3 = document.createElement("h3");
+  heading3.innerText = "Made with ❤️️ by Yogeesh S";
+  document.querySelectorAll(".container")[0].appendChild(heading3);
 };
 
 const generateResult = (subjects, subject_code, credits) => {
-  let totalmarks = totalcredits = totalgradepoints = totalcreditpoints = 0;
+  let totalmarks = (totalcredits = totalgradepoints = totalcreditpoints = 0);
   const maindiv = document.createElement("div");
   maindiv.className = "container";
   document.body.appendChild(maindiv);
@@ -129,40 +129,40 @@ const generateResult = (subjects, subject_code, credits) => {
   }
   const lasttr = document.createElement("tr");
   const tottd1 = document.createElement("th");
-  tottd1.innerText = 'Total';
+  tottd1.innerText = "Total";
   lasttr.appendChild(tottd1);
   const tottd2 = document.createElement("td");
-  tottd2.innerHTML = '<b>'+totalmarks+'</b>';
+  tottd2.innerHTML = "<b>" + totalmarks + "</b>";
   lasttr.appendChild(tottd2);
   const tottd3 = document.createElement("td");
-  tottd3.innerHTML = '<b>'+totalcredits+'</b>';
+  tottd3.innerHTML = "<b>" + totalcredits + "</b>";
   lasttr.appendChild(tottd3);
   const tottd4 = document.createElement("td");
-  tottd4.innerHTML = '<b>'+totalgradepoints+'</b>';
+  tottd4.innerHTML = "<b>" + totalgradepoints + "</b>";
   lasttr.appendChild(tottd4);
   const tottd5 = document.createElement("td");
-  tottd5.innerHTML = '<b>'+totalcreditpoints+'</b>';
+  tottd5.innerHTML = "<b>" + totalcreditpoints + "</b>";
   lasttr.appendChild(tottd5);
   table.appendChild(lasttr);
-  const h22 = document.createElement('h2')
-  h22.innerText = 'Your SGPA is: ' + (totalcreditpoints/totalcredits).toFixed(2);
-  document.querySelectorAll('.container')[1].appendChild(h22)
-  let button = document.createElement('button');
-  button.id = 'print';
-  button.innerText = 'Print Result';
-  document.querySelectorAll('.container')[1].appendChild(button);
-  let heading3 = document.createElement('h3')
-  heading3.innerText = 'Made with ❤️️ by Yogeesh S';
-  document.querySelectorAll('.container')[1].appendChild(heading3);
+  const h22 = document.createElement("h2");
+  h22.innerText =
+    "Your SGPA is: " + (totalcreditpoints / totalcredits).toFixed(2);
+  document.querySelectorAll(".container")[1].appendChild(h22);
+  let button = document.createElement("button");
+  button.id = "print";
+  button.innerText = "Print Result";
+  document.querySelectorAll(".container")[1].appendChild(button);
+  let heading3 = document.createElement("h3");
+  heading3.innerText = "Made with ❤️️ by Yogeesh S";
+  document.querySelectorAll(".container")[1].appendChild(heading3);
   document.querySelector("#print").addEventListener("click", () => {
-    let printContent = document.querySelectorAll('.container')[1].innerHTML;
+    let printContent = document.querySelectorAll(".container")[1].innerHTML;
+    let bodyContent = document.body.innerHTML;
     document.body.innerHTML = printContent;
     window.print();
-    //location.reload();
+    document.body.innerHTML = bodyContent;
   });
 };
-
-
 
 const checkValidMarks = () => {
   let rows = subjects.length;

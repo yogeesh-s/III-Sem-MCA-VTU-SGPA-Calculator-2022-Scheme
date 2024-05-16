@@ -85,7 +85,7 @@ button:hover{
 .credit{
     position: absolute;
     left: 4px;
-    top: 28px;
+    bottom: 5px;
     background-color: rgba(7, 0, 102, 0.796);
     padding: 0px 5px 0px 5px;
     border-radius: 5px;
@@ -117,5 +117,14 @@ td,th{
 @media print {
     #print {
         display: none !important;
+    }
+
+    table{
+        border-collapse: separate;
+        border: 1px solid rgba(0, 0, 0, 0.321);
+    }
+
+    th, td {
+        border: 1px solid rgba(0, 0, 0, 0.321);
     }
 }
