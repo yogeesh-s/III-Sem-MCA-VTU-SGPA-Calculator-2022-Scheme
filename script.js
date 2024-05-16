@@ -160,7 +160,7 @@ const generateResult = (subjects, subject_code, credits) => {
     let bodyContent = document.body.innerHTML;
     document.body.innerHTML = printContent;
     window.print();
-    document.body.innerHTML = bodyContent;
+    //document.body.innerHTML = bodyContent;
   });
 };
 
